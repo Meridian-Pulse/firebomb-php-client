@@ -1,0 +1,20 @@
+{
+  "name": "exoticpixels/firebomb-php-client",
+  "description": "Reporting client for PHP to Firebomb",
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^7.8"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Exoticpixels\\Firebomb\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alan Mac Cormack",
+      "email": "it@codeverze.com"
+    }
+  ]
+}
