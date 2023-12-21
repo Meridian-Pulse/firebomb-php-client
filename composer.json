@@ -3,7 +3,8 @@
   "description": "Reporting client for PHP to Firebomb",
   "type": "library",
   "require": {
-    "guzzlehttp/guzzle": "^7.8"
+    "guzzlehttp/guzzle": "^7.8",
+    "illuminate/support": "^7.0|^8.0|^9.0"
   },
   "license": "MIT",
   "autoload": {
@@ -13,8 +14,9 @@
   },
   "authors": [
     {
-      "name": "Alan Mac Cormack",
+      "name": "Exotic Pixels",
       "email": "it@codeverze.com"
     }
   ]
 }
+  
