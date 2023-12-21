@@ -1,6 +1,6 @@
 <?php
 
-namespace Exoticpixels\Firebomb;
+namespace MeridianPulse\Firebomb;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;

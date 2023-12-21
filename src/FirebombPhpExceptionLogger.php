@@ -1,6 +1,6 @@
 <?php
 
-namespace Exoticpixels\Firebomb;
+namespace MeridianPulse\Firebomb;
 
 use Exception;
 use GuzzleHttp\Client;

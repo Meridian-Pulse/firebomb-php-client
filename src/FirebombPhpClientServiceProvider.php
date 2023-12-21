@@ -1,8 +1,8 @@
 <?php
 
-namespace Exoticpixels\Firebomb;
+namespace MeridianPulse\Firebomb;
 
-use Exoticpixels\Firebomb\FirebombExceptionHandler;
+use MeridianPulse\Firebomb\FirebombExceptionHandler;
 use Illuminate\Support\ServiceProvider;
 use GuzzleHttp\Client;
 use Illuminate\Contracts\Debug\ExceptionHandler;

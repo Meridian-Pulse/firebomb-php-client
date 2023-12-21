@@ -1,5 +1,5 @@
 {
-  "name": "exoticpixels/firebomb-php-client",
+  "name": "meridian-pulse/firebomb-php-client",
   "description": "Reporting client for PHP to Firebomb",
   "type": "library",
   "require": {
@@ -9,14 +9,13 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Exoticpixels\\Firebomb\\": "src/"
+      "MeridianPulse\\Firebomb\\": "src/"
     }
   },
   "authors": [
     {
-      "name": "Exotic Pixels",
+      "name": "Meridian Pulse",
       "email": "it@codeverze.com"
     }
   ]
 }
-  
