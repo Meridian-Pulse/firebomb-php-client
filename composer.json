@@ -1,19 +1,30 @@
 {
-  "name": "exoticpixels/firebomb-php-client",
+  "name": "meridian-pulse/firebomb-php-client",
   "description": "Reporting client for PHP to Firebomb",
   "type": "library",
   "require": {
-    "guzzlehttp/guzzle": "^7.8"
+    "guzzlehttp/guzzle": "^7.8",
+    "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+    "nunomaduro/termwind": "^1.15"
   },
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Exoticpixels\\Firebomb\\": "src/"
+      "MeridianPulse\\Firebomb\\": "src/"
     }
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+        "providers": [
+            "MeridianPulse\\Firebomb\\FirebombPhpClientServiceProvider"
+        ]
+    }
+},
   "authors": [
     {
-      "name": "Alan Mac Cormack",
+      "name": "Meridian Pulse",
       "email": "it@codeverze.com"
     }
   ]
