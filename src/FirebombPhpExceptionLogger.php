@@ -33,7 +33,7 @@ class FirebombPhpExceptionLogger
         try {
             $this->client->post($this->url, [
                 'headers' => [
-                    // 'Authorization' => 'Bearer ' . $this->apiKey,
+                    'Authorization' => 'Bearer ' . $this->apiKey,
                     'Content-Type' => 'application/json',
                 ],
                 'json' => [
@@ -43,7 +43,6 @@ class FirebombPhpExceptionLogger
             ]);
         } catch (GuzzleException $e) {
             Log::error('Failed to log exception', ['exception' => $e->getMessage()]);
-            // Add more detailed logging if necessary
         }
     }
 }

@@ -20,8 +20,6 @@ class FirebombException extends Command
         } catch (Exception $e) {
             app('MeridianPulse\Firebomb\FirebombPhpExceptionLogger')->logException($e);
 
-            // $this->info('Exception thrown and handled by Firebomb: ' . $e->getMessage());
-
             $message = $e->getMessage();
             $message = $e->getMessage();
             render(<<<HTML
