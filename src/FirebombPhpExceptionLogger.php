@@ -38,7 +38,19 @@ class FirebombPhpExceptionLogger
                 ],
                 'json' => [
                     'message' => $exception->getMessage(),
+                    'code' => $exception->getCode(),
+                    'file' => $exception->getFile(),
+                    'line' => $exception->getLine(),
                     'trace' => $exception->getTraceAsString(),
+                    'previous' => $exception->getPrevious() ? $exception->getPrevious()->getMessage() : null,
+                    'additionalInfo' => [
+                        'user_id' => auth()->id(), // Assuming you're using Laravel's authentication
+                        'url' => request()->fullUrl(),
+                        'http_method' => request()->method(),
+                        'input_data' => request()->all(),
+                        'environment' => app()->environment(),
+                        'timestamp' => now()->toDateTimeString()
+                    ]
                 ],
             ]);
         } catch (GuzzleException $e) {
