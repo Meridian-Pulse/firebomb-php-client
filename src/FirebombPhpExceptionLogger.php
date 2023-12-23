@@ -33,7 +33,7 @@ class FirebombPhpExceptionLogger
         try {
             $this->client->post($this->url, [
                 'headers' => [
-                    'Authorization' => 'Bearer ' . $this->apiKey,
+                    // 'Authorization' => 'Bearer ' . $this->apiKey,
                     'Content-Type' => 'application/json',
                 ],
                 'json' => [
